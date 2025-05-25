@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>for my only love</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    // التحقق من تسجيل الدخول
+    if (sessionStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html"; // رجوع لصفحة الدخول
+    }
+  </script>
+</head>
+
+<body>
+
+  <h1> 😘😔يااارب تساامحني بقاا يمرووومتي </h1>
+
+  <!-- زر تشغيل الصوت -->
+  <button id="playAudioBtn">تشغيل الموسيقى 🎵</button>
+
+  <audio id="myAudio">
+    <source src="audio/hamaki.mp3" type="audio/mpeg" />
+    متصفحك لا يدعم تشغيل الصوت
+  </audio>
+
+  <div class="gallery">
+    <div class="photo fade-in">
+      <img src="images/img1.jpg" alt="صورة 1" />
+      <p> 😘😔يعني حته البسبوسه الصغيره بتاعتي دي تزعل مني </p>
+    </div>
+    <div class="photo fade-in">
+      <img src="images/img2.jpg" alt="صورة 2" />
+      <p> 😘😔البت اللي كانت كرفاالي ساعتها بس بحبهاا مووت </p>
+    </div>
+    <div class="photo fade-in">
+      <img src="images/img3.jpg" alt="صورة 3" />
+      <p>اي البت اللي بحبها دي ولا هحب حد زيها😘😔</p>
+    </div>
+    <div class="photo fade-in">
+      <img src="images/img4.jpg" alt="صورة 4" />
+      <p> 😘😔والله تستااهلي بوسه </p>
+    </div>
+    <div class="photo fade-in">
+      <img src="images/img6.jpg" alt="صورة 6" />
+      <p>😘😔 اي البت اللي مده بوزها عشرين متر دوول </p>
+    </div>
+    <div class="photo fade-in">
+      <img src="images/img5.jpg" alt="صورة 5" />
+      <p> 😘😔طبعا عرفااني حرامي قلوب واخد الصوره من ع الصراحه بس كنت متضايق انك حطاهاا بس الحمد لله مفيش حاجه الوقتي</p>
+    </div>
+    <div class="photo fade-in">
+      <img src="images/img7.jpg" alt="صورة 7" />
+      <p> 😘😔البت اللي زعلت علشان مردتش ع الصوره دي ... والله</p>
+    </div>
+    <div class="photo fade-in">
+      <img src="images/img8.jpg" alt="صورة 8" />
+      <p> 😘😔اي العيوونه اللي تخطف القلب دي</p>
+    </div>
+    <div class="photo fade-in">
+      <img src="images/img9.jpg" alt="صورة 9" />
+      <p> 😘😔قولت لما أختم بالصورة اللي هتفضل دايمًا ف قلبي ❤️</p>
+    </div>
+  </div>
