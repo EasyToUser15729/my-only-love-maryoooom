@@ -2,26 +2,87 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>تسجيل الدخول</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>افتحي 😘</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background: url('images/im910.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Tahoma', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      color: white;
+      backdrop-filter: blur(5px);
+    }
+
+    .login-container {
+      margin-top: 100px;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 40px 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px pink;
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      width: 200px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: hotpink;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: deeppink;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .hint {
+      font-size: 14px;
+      color: #ffc0cb;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 
-<body style="text-align:center; font-family:sans-serif; margin-top:100px;">
-  <h2>أدخل كلمة السر للدخول:</h2>
-  <input type="password" id="passwordInput" placeholder="كلمة السر">
-  <button onclick="checkPassword()">دخول</button>
+<body>
+  <div class="login-container">
+    <h2>😏 قوليلي بحبك الاول و هديكي كلمه السر </h2>
+    <input type="password" id="passwordInput" placeholder="كلمة السر">
+    <br>
+    <button onclick="checkPassword()">دخول</button>
+    <div class="hint"> </div>
+  </div>
 
   <script>
     function checkPassword() {
-      const correctPassword = "maryam1529";
+      const correctPassword = "maryam157297"; // غيرها لو عايز
       const userPassword = document.getElementById("passwordInput").value;
 
       if (userPassword === correctPassword) {
         sessionStorage.setItem("loggedIn", "true");
         window.location.href = "index.html";
       } else {
-        alert("😔متحاوليش مش هقولك ع كلمه السر اللي لما تقوليلي بحبك");
-      }
+        alert(" متحاوليش.. كلمة السر دي مش لأي حد، دي لمريومتي بس لما تعترفي ب اي اعتراف "); 
+            }
     }
   </script>
 </body>
