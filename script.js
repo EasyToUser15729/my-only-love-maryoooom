@@ -3,11 +3,11 @@ const audio = document.getElementById('myAudio');
 const playBtn = document.getElementById('playAudioBtn');
 
 playBtn.addEventListener('click', () => {
-  audio.currentTime = 14;  // بداية التشغيل من ثانية 14
+  audio.currentTime = 14;  // بداية التشغيل من الثانية 2
   audio.play();
 });
 
-// إيقاف الصوت تلقائياً عند الوصول للنهاية (124 ثانية)
+// إيقاف الصوت تلقائياً عند الوصول إلى الدقيقة 2 (120 ثانية)
 audio.addEventListener('timeupdate', () => {
   if (audio.currentTime >= 124) {
     audio.pause();
